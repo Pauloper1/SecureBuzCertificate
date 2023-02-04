@@ -1,0 +1,27 @@
+{
+  "name": "securebuzcertificate",
+  "version": "1.0.0",
+  "description": "SPIT Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pauloper1/SecureBuzCertificate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pauloper1/SecureBuzCertificate/issues"
+  },
+  "homepage": "https://github.com/Pauloper1/SecureBuzCertificate#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "request": "^2.88.2"
+  }
+}
