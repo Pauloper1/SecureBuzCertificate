@@ -1,46 +1,41 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose=require("mongoose");
-const morgan=require("morgan");
+// const morgan=require("morgan");
 
+const app = express()
 
-// app.post('/webhook', (req, res) => {
-//     // get agent from request
-//     let agent = new WebhookClient({request: req, response: res})    // create intentMap for handle intent
-//     let intentMap = new Map();    // add intent map 2nd parameter pass function
-//     intentMap.set('webhook-demo',handleWebHookIntent)    // now agent is handle request and pass intent map
-//     agent.handleRequest(intentMap)
-// })
-// function handleWebHookIntent(agent){
-//     agent.add("Hello I am Webhook demo How are you...")
-// }
+const dialogflow = require('@google-cloud/dialogflow').v2beta1;
 
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
 app.get("/", (req,res)=>{
-    res.sendFile(__dirname + "\\pages\\HTML\\signin.html");
+    res.sendFile(__dirname + "/pages/HTML/signin.html");
 });
 
 app.get("/signup.html", (req,res)=>{
-    res.sendFile(__dirname + "\\pages\\HTML\\signup.html");
+    res.sendFile(__dirname + "/pages/HTML/signup.html");
 });
 
 app.get("/Dashboard.html", (req,res)=>{
-    res.sendFile(__dirname + "\\pages\\HTML\\Dashboard.html");
+    res.sendFile(__dirname + "/pages/HTML/Dashboard.html");
 });
 
 app.get("/pages/Dashboard.html", (req,res)=>{
-    res.sendFile(__dirname + "\\pages\\HTML\\Dashboard.html");
+    res.sendFile(__dirname + "/pages/HTML/Dashboard.html");
+});
+app.get("/pages/status.html", (req,res)=>{
+    res.sendFile(__dirname + "/pages/HTML/status.html");
 });
 
 
 app.get("/pages/needs.html", (req,res)=>{
-    res.sendFile(__dirname + "\\pages\\HTML\\needs.html");
+    res.sendFile(__dirname + "/pages/HTML/needs.html");
 });
 
 app.get("/pages/user_form.html", (req,res)=>{
-    res.sendFile(__dirname + "\\pages\\HTML\\user_form.html");
+    res.sendFile(__dirname + "/pages/HTML/user_form.html");
 });
 
 
