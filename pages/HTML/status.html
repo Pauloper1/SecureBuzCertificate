@@ -4,104 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Status</title>
+    <title>Dasboard</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
-
-    <!-- Navbar -->
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-            
-                <div class="logo">
-                    <img src="images/sbb.png" width="125px">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li> <a href="/pages/Dashboard.html" >Home</li>
-                        <li> <a href="/pages/status.html" >Status</li>
-                        <li> <a href="" >About</li>
-                        <li> <a href="" >Contact</li>
-                    </ul>
-                </nav>
-
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+  <!-- Navbar -->
+  <div class="header">
+    <div class="container">
+        <div class="navbar">
+        
+            <div class="logo">
+                <img src="../images/sbb.png" width="125px">
             </div>
-    <!-- Navbar ends -->
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="/pages/Dashboard.html" >Home</li>
+                    <!-- <li> <a href="/pages/status.html" >Status</li> -->
+                    <li> <a href="" >About</li>
+                    <li> <a href="" >Contact</li>
+                </ul>
+            </nav>
 
-
-    <!-- <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <div class="btn-green">Approved</div>
-               <a href="#" class="btn btn-primary">Go somewhere</a> 
-            </div>
-          </div>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-<BR>
-  <BR>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <!-- Dashboard -->
+    <div class="row mx-auto ">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><a href="/pages/HTML/underScrutiny.html">Under Scrutiny</a></h5>
+        
+        <!-- <p class="card-text">This CBAP training is designed to help professionals gain new skills and expertise in advanced documentation, effective planning, and the creation of business solutions. </p> -->
+        <!-- <a href="/pages/needs.html" class="btn btn-primary">Apply</a> -->
+      </div>
     </div>
-      <!-- foooter -->
-      <div class="footer">
-        <div class="container">
-            <div class="row">
-                
-               
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twiiter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="Copyright">By Edgerunners</p>
-        </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Approved
+        </h5>
+        <!-- <p class="card-text">LLP is an alternative corporate business form that gives the benefits of limited liability of a company and the flexibility of a partnership.</p> -->
+        <!-- <a href="needs.html" class="btn btn-primary">Apply</a> -->
+      </div>
     </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Rejected
+        </h5>
+        <!-- <p class="card-text">This CBAP training is designed to help professionals gain new skills and expertise in advanced documentation, effective planning, and the creation of business solutions. </p> -->
+        <!-- <a href="/pages/needs.html" class="btn btn-primary">Apply</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+
+<!--                         Footer -->
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          
+         
+          <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affliate</li>
+              </ul>
+          </div>
+          <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul>
+                  <li>Facebook</li>
+                  <li>Twiiter</li>
+                  <li>Instagram</li>
+                  <li>YouTube</li>
+              </ul>
+          </div>
+      </div>
+      <hr>
+      <p class="Copyright">By Edgerunners</p>
+  </div>
+</div>
+</body>
+</html>
 </body>
 </html>
