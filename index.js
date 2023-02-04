@@ -1,4 +1,7 @@
 const express = require("express");
+// const bodyParser = require("body-parser");
+// const mongoose=require("mongoose");
+// const morgan=require("morgan");
 const bodyParser = require("body-parser");
 const mongoose=require("mongoose");
 // const morgan=require("morgan");
@@ -22,6 +25,8 @@ app.get("/Dashboard.html", (req,res)=>{
     res.sendFile(__dirname + "/pages/HTML/Dashboard.html");
 });
 
+app.get("/pages/HTML/underScrutiny.html", (req,res)=>{
+    res.sendFile(__dirname + "/pages/HTML/underScrutiny.html");
 app.get("/pages/Dashboard.html", (req,res)=>{
     res.sendFile(__dirname + "/pages/HTML/Dashboard.html");
 });
