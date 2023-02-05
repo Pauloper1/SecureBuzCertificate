@@ -17,6 +17,14 @@ app.get("/", (req,res)=>{
     res.sendFile(__dirname + "/pages/HTML/signin.html");
 });
 
+app.get("/approve_certificate", (req,res)=>{
+    res.sendFile(__dirname + "/pages/HTML/user_certificate.html");
+});
+
+app.get("/adminDashboard",(req, res)=>{
+    res.sendFile(__dirname+"/pages/HTML/adminDashboard.html")
+})
+
 app.get("/signup.html", (req,res)=>{
     res.sendFile(__dirname + "/pages/HTML/signup.html");
 });
