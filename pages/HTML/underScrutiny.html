@@ -1,92 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dasboard</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width,initial-scale=1.0">
+        <title>
+            SecureBuz | Needs/Description 
+        </title>
+        <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Navbar -->
-  <div class="header">
-    <div class="container">
-        <div class="navbar">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Header part -->
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                
+                    <div class="logo">
+                        <img src="../../images/sbb.png" width="100px" border-radius="50%">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li> <a href="/adminDashboard" >Home</li>
+                                <li> <a href="" >About</li>
+                                <li> <a href="" >Contact</li>
+                        </ul>
+                    </nav>
+
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+        <!-- Form part -->
+        <h2>Apply for Renewal of Business License</h2>
+        <br>
+<br>
+        <form class="form">
+
+            <label for="doc">Aadhar Card</label>
+
+        <div id="dnd-accept-formats" class="file-upload-wrapper">
+            <img src="../images/adhar.jpg" width="400px" height="250px" alt="image not available" class="img-thumbnail">
+<br>
+<br>
+<label for="doc">Ration Card</label>
+
+<div id="dnd-accept-formats" class="file-upload-wrapper">
+    <img src="../images/ration.jpg" width="400px" height="250px" alt="image not available" class="img-thumbnail">
+</div>
+  <br><br>
+  <label for="doc">Electricity Bill</label>
+
+  <div id="dnd-accept-formats" class="file-upload-wrapper">
+    <img src="../images/elec.png"  width="400px" height="250px"     alt="image not available" class="img-thumbnail">
+
+  <br>
         
-            <div class="logo">
-                <img src="../images/sbb.png" width="125px">
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li> <a href="/pages/Dashboard.html" >Home</li>
-                    <li> <a href="/pages/status.html" >Status</li>
-                    <li> <a href="" >About</li>
-                    <li> <a href="" >Contact</li>
-                </ul>
-            </nav>
-
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-        </div>
-        <!-- Dashboard -->
-    <div class="row mx-auto ">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Certified Business Analysis Professional
-        </h5>
-        <p class="card-text">This CBAP training is designed to help professionals gain new skills and expertise in advanced documentation, effective planning, and the creation of business solutions. </p>
-        <!-- <a href="/pages/needs.html" class="btn btn-primary">Apply</a> -->
-      </div>
-    </div>
-  </div>
-  <!-- <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Company or LLP Registration
-        </h5>
-        <p class="card-text">LLP is an alternative corporate business form that gives the benefits of limited liability of a company and the flexibility of a partnership.</p>
-        <a href="/pages/needs.html" class="btn btn-primary">Apply</a>
-      </div>
-    </div>
-  </div> -->
-</div>
-
-<!-- footer -->
-
-<!--                         Footer -->
-<div class="footer">
-  <div class="container">
-      <div class="row">
+          <a href="" class="btn"> Approve &#8594;</a>
+          <a href="" class="btn btn-warning">Reject &#8594;</a>
+        </form>
           
-         
-          <div class="footer-col-3">
-              <h3>Useful Links</h3>
-              <ul>
-                  <li>Coupons</li>
-                  <li>Blog Post</li>
-                  <li>Return Policy</li>
-                  <li>Join Affliate</li>
-              </ul>
-          </div>
-          <div class="footer-col-4">
-              <h3>Follow Us</h3>
-              <ul>
-                  <li>Facebook</li>
-                  <li>Twiiter</li>
-                  <li>Instagram</li>
-                  <li>YouTube</li>
-              </ul>
-          </div>
-      </div>
-      <hr>
-      <p class="Copyright">By Edgerunners</p>
-  </div>
-</div>
-</body>
-</html>
-</body>
+<!--                         Footer -->
+          <div class="footer">
+            <div class="container">
+                <div class="row">
+                    
+                   
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twiiter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="Copyright">By Edgerunners</p>
+            </div>
+        </div>
+    </body>
 </html>
