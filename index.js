@@ -21,6 +21,11 @@ app.get("/approve_certificate", (req,res)=>{
     res.sendFile(__dirname + "/pages/HTML/user_certificate.html");
 });
 
+app.get("/underScrutiny", (req,res)=>{
+    res.sendFile(__dirname + "/pages/HTML/user_certificate_copy.html");
+});
+
+
 app.get("/adminDashboard",(req, res)=>{
     res.sendFile(__dirname+"/pages/HTML/adminDashboard.html")
 })
