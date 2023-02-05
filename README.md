@@ -59,5 +59,6 @@ We also have other features such as
 
 + chat bot
 
-+ video verification  
++ video verification
+    - some of the concerned staffs will verify your signature on a video meet.
 
